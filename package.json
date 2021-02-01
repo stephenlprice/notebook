@@ -1,0 +1,31 @@
+{
+  "name": "notebook",
+  "version": "1.0.0",
+  "description": "Notebook is used to write and save notes. This application has an Express.js back end that saves and retrieves note data from a JSON file.",
+  "main": "server.js",
+  "scripts": {
+    "test": "npm run test",
+    "start": "nodemon ./server.js localhost 8080"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/stephenlprice/notebook.git"
+  },
+  "keywords": [
+    "notes",
+    "notebook",
+    "expressjs"
+  ],
+  "author": "Stephen Price",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/stephenlprice/notebook/issues"
+  },
+  "homepage": "https://github.com/stephenlprice/notebook#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7"
+  }
+}

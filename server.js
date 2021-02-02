@@ -1,6 +1,7 @@
 // Dependencies
 const express = require('express');
 const path = require('path');
+const uniqid = require('uniqid');
 const db = require('./db/db.json');
 
 // Sets up the Express App
@@ -27,6 +28,8 @@ app.post('/api/notes', (req, res) => {
     // req.body hosts is equal to the JSON post sent from the user
     const newNote = req.body;
 
+    newNote.id = uniqid();
+
     console.log(newNote);
 
     db.push(newNote);
@@ -42,3 +45,5 @@ app.delete('/api/notes/:id', (req, res) => {
 
 // Starts the server to begin listening
 app.listen(PORT, () => console.log(`App listening on PORT ${PORT}`));
+
+module.exports = uniqid;

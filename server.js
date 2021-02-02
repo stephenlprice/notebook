@@ -49,7 +49,6 @@ app.delete('/api/notes/:id', (req, res) => {
         console.log(db[i]);
         if (id === db[i].id) {
             index = db.indexOf(db[i]);
-            console.log("deleting note with ID: " + db[i].id);
             db.splice(index, 1);
             console.log(db);
             return res.json(db);

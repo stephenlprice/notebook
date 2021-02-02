@@ -5,7 +5,7 @@
   "main": "server.js",
   "scripts": {
     "test": "npm run test",
-    "start": "nodemon ./server.js localhost 8080"
+    "start": "node server.js"
   },
   "repository": {
     "type": "git",
